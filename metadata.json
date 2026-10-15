@@ -1,0 +1,6 @@
+{
+  "name": "VibeWeight - AI Weight Management & Fitness",
+  "description": "Cross-compatible mobile weight management app featuring AI calorie food scanning, trainer booking marketplace, goal-based program builder, InBody and Apple Watch sync, and rewards points.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

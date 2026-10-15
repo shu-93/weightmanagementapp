@@ -1,0 +1,556 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "appName": "VibeWeight Mobile Backend",
+    "lastUpdated": "2026-10-15T08:14:13.918Z",
+    "wgerEndpoint": "https://wger.de/api/v2/exerciseinfo/?language=2&limit=20",
+    "lastWgerSync": "2026-10-15T08:12:38.776Z",
+    "wgerTotalCount": 932
+  },
+  "exercises": [
+    {
+      "id": 9,
+      "uuid": "1b020b3a-3732-4c7e-92fd-a0cec90ed69b",
+      "name": "2 Handed Kettlebell Swing",
+      "category": "Abs",
+      "categoryId": 10,
+      "muscles": [
+        "Hamstrings",
+        "Glutes"
+      ],
+      "musclesSecondary": [
+        "Quads",
+        "Abs"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ],
+      "description": "Two Handed Russian Style Kettlebell swing",
+      "caloriesBurnPerMin": 10.5,
+      "activeSgZone": "ActiveSG Free Weights Zone",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.774Z"
+    },
+    {
+      "id": 12,
+      "uuid": "53906cd1-61f1-4d56-ac60-e4fcc5824861",
+      "name": "Seated Hip Adduction",
+      "category": "Legs",
+      "categoryId": 9,
+      "muscles": [
+        "Glutes"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "description": "Starting Position: Sit on the machine with your knees inward and against the pads. Pull the pin to release the pads. Grab the handles on the sides.b",
+      "caloriesBurnPerMin": 10.5,
+      "activeSgZone": "ActiveSG Functional Conditioning Studio",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.774Z"
+    },
+    {
+      "id": 20,
+      "uuid": "f24cb758-9c0d-42d4-ad9e-6025c527dd13",
+      "name": "Arnold Shoulder Press",
+      "category": "Shoulders",
+      "categoryId": 13,
+      "muscles": [
+        "Shoulders"
+      ],
+      "musclesSecondary": [
+        "Trapezius",
+        "Triceps"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "description": "Very common shoulder exercise. As shown here:&nbsp;https://www.youtube.com/watch?v=vj2w851ZHRM",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Free Weights Zone",
+      "difficulty": "Intermediate",
+      "syncedAt": "2026-10-15T08:12:38.774Z"
+    },
+    {
+      "id": 31,
+      "uuid": "f2733700-aa5d-4df7-bc52-1876ab4fb479",
+      "name": "Axe Hold",
+      "category": "Arms",
+      "categoryId": 8,
+      "muscles": [
+        "Core"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "description": "Grab dumbbells and extend arms to side and hold as long as you can",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Free Weights Zone",
+      "difficulty": "Intermediate",
+      "syncedAt": "2026-10-15T08:12:38.774Z"
+    },
+    {
+      "id": 41,
+      "uuid": "a6bced3c-72f5-42a3-9438-5569d46f49fd",
+      "name": "Barbell Ab Rollout",
+      "category": "Abs",
+      "categoryId": 10,
+      "muscles": [
+        "Obliquus externus abdominis"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Barbell"
+      ],
+      "description": "Place a barbell on the floor at your feet. Bending at the waist, grip the barbell with a shoulder with overhand grip. With a slow controlled motion, roll the bar out so that your back is straight. Roll back up raising your hips and butt as you return to the starting position.",
+      "caloriesBurnPerMin": 7,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.774Z"
+    },
+    {
+      "id": 43,
+      "uuid": "dae6f6ed-9408-4e62-a59a-1a33f4e8ab36",
+      "name": "Barbell Hack Squats",
+      "category": "Legs",
+      "categoryId": 9,
+      "muscles": [
+        "Quads"
+      ],
+      "musclesSecondary": [
+        "Hamstrings",
+        "Glutes"
+      ],
+      "equipment": [
+        "Barbell"
+      ],
+      "description": "Perform leg squats with barbell behind your legs",
+      "caloriesBurnPerMin": 10.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.774Z"
+    },
+    {
+      "id": 46,
+      "uuid": "04e7d7e4-f8d2-406d-97df-3df3bceec22c",
+      "name": "Barbell Lunges Standing",
+      "category": "Legs",
+      "categoryId": 9,
+      "muscles": [
+        "Quads"
+      ],
+      "musclesSecondary": [
+        "Glutes"
+      ],
+      "equipment": [
+        "Barbell"
+      ],
+      "description": "Put barbell on the back of your shoulders. Stand upright, then take the first step forward. Step should bring you forward so that your supporting legs knee can touch the floor. Then stand back up and repeat with the other leg. Remember to keep good posture.",
+      "caloriesBurnPerMin": 10.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.774Z"
+    },
+    {
+      "id": 48,
+      "uuid": "67c26c9b-32f3-4b8b-b13a-4d8be4803975",
+      "name": "Barbell Reverse Wrist Curl",
+      "category": "Arms",
+      "categoryId": 8,
+      "muscles": [
+        "Core"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Barbell",
+        "Bench"
+      ],
+      "description": "Sitting on a bench, grab a barbell with your palms facing down and your hands shoulder-width apart. Rest your forearms on your thighs and allow your wrists to hang over your knees. Curl your knuckles towards your face, lifting the barbell. Pause for a moment in the top position, then slowly return the barbell to the starting position.",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.775Z"
+    },
+    {
+      "id": 50,
+      "uuid": "13234b53-ea0c-41f1-9069-776865ea8eff",
+      "name": "Barbell Triceps Extension",
+      "category": "Arms",
+      "categoryId": 8,
+      "muscles": [
+        "Triceps"
+      ],
+      "musclesSecondary": [
+        "Shoulders",
+        "Chest"
+      ],
+      "equipment": [
+        "Barbell"
+      ],
+      "description": "Position barbell overhead with narrow overhand grip. Lower forearm behind upper arm with elbows remaining overhead. Extend forearm overhead. Lower and repeat.",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.775Z"
+    },
+    {
+      "id": 51,
+      "uuid": "cfb6a754-57be-431b-b8d0-d9963120bd5a",
+      "name": "Barbell Wrist Curl",
+      "category": "Arms",
+      "categoryId": 8,
+      "muscles": [
+        "Core"
+      ],
+      "musclesSecondary": [
+        "Biceps"
+      ],
+      "equipment": [
+        "Barbell",
+        "Bench"
+      ],
+      "description": "Sitting on a bench, grab a barbell with your palms facing up and your hands shoulder-width apart. Rest your forearms on your thighs and allow your wrists to hang over your knees. Perform the movement by curling your palms and wrists towards your face. Pause for a moment in the top position, then slowly return the barbell to the starting position.",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.775Z"
+    },
+    {
+      "id": 56,
+      "uuid": "03db11cc-8079-463c-9399-6f346b100ce6",
+      "name": "Abdominal Stabilization",
+      "category": "Abs",
+      "categoryId": 10,
+      "muscles": [
+        "Abs"
+      ],
+      "musclesSecondary": [
+        "Obliquus externus abdominis"
+      ],
+      "equipment": [
+        "Gym mat"
+      ],
+      "description": "Perform with controlled tempo and engaged core muscles.",
+      "caloriesBurnPerMin": 7,
+      "activeSgZone": "ActiveSG Functional Conditioning Studio",
+      "difficulty": "Beginner",
+      "syncedAt": "2026-10-15T08:12:38.775Z"
+    },
+    {
+      "id": 57,
+      "uuid": "b7267f90-8706-442b-b918-507e16092b8e",
+      "name": "Bear Walk 2",
+      "category": "Chest",
+      "categoryId": 11,
+      "muscles": [
+        "Shoulders",
+        "Calves",
+        "Chest",
+        "Abs",
+        "Serratus anterior",
+        "Soleus",
+        "Triceps"
+      ],
+      "musclesSecondary": [
+        "Glutes",
+        "Lats",
+        "Obliquus externus abdominis",
+        "Quads",
+        "Trapezius"
+      ],
+      "equipment": [
+        "none (bodyweight exercise)"
+      ],
+      "description": "-Rest your weight on your palms and the balls of your feet, not dissimilar to normal pushup position -Move by stepping with your R palm and L foot, then your L palm and R foot.&nbsp; Basically, walk like a lumbering bear. -Move as fast as you can.&nbsp; Measure your reps/sets in either distance (i.e. 40 yards) or time (i.e. 45 seconds) -Works your Pecs, Deltoids, Triceps, Traps, Lats, Abs and Lower Back, Hip Flexors, Quads, Glutes and Calves",
+      "caloriesBurnPerMin": 8.5,
+      "activeSgZone": "ActiveSG Functional Conditioning Studio",
+      "difficulty": "Intermediate",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 71,
+      "uuid": "046fce45-69f2-46f7-a5b6-79a25a485af1",
+      "name": "Single Leg Extension",
+      "category": "Legs",
+      "categoryId": 9,
+      "muscles": [
+        "Quads"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "description": "Perform with controlled tempo and engaged core muscles.",
+      "caloriesBurnPerMin": 10.5,
+      "activeSgZone": "ActiveSG Functional Conditioning Studio",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 73,
+      "uuid": "3717d144-7815-4a97-9a56-956fb889c996",
+      "name": "Bench Press",
+      "category": "Chest",
+      "categoryId": 11,
+      "muscles": [
+        "Chest"
+      ],
+      "musclesSecondary": [
+        "Shoulders",
+        "Triceps"
+      ],
+      "equipment": [
+        "Barbell",
+        "Bench"
+      ],
+      "description": "Lay down on a bench, the bar should be directly above your eyes, the knees are somewhat angled and the feet are firmly on the floor. Concentrate, breath deeply and grab the bar more than shoulder wide. Bring it slowly down till it briefly touches your chest at the height of your nipples. Push the bar up. If you train with a high weight it is advisable to have a spotter that can help you up if you can't lift the weight on your own. With the width of the grip you can also control which part of the chest is trained more: wide grip: outer chest muscles narrow grip: inner chest muscles and triceps",
+      "caloriesBurnPerMin": 8.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 75,
+      "uuid": "28321cf3-70e6-48a4-ade1-d11382180cb3",
+      "name": "Benchpress Dumbbells",
+      "category": "Chest",
+      "categoryId": 11,
+      "muscles": [
+        "Chest"
+      ],
+      "musclesSecondary": [
+        "Shoulders",
+        "Triceps"
+      ],
+      "equipment": [
+        "Bench",
+        "Dumbbell"
+      ],
+      "description": "Setup and Starting Position: Sit at the end of a flat bench with a dumbbell resting vertically against each thigh. Carefully lean back while driving the dumbbells toward your chest with your knees. The “Leg Drive” and Posture: Plant your feet firmly on the floor. Retract your shoulder blades (press them together against the bench) and maintain a slight natural lumbar curve. Starting Position: Push the dumbbells toward the ceiling. Your wrists should be aligned with your elbows. Rotate the dumbbells slightly inward (about 45 degrees) so that your elbows do not splay out too far to the sides, thereby protecting your shoulders. Eccentric Phase (Lowering): Lower the dumbbells in a controlled manner toward the sides of your chest. Your elbows should lower at an angle of about 45–60 degrees relative to your body. Feel the stretch in the lower part of your chest. Concentric Phase (Lift): Push the weight upward in a slight arc (toward the center), without letting the dumbbells collide at the top or fully locking out your elbows to maintain muscle tension. Exhale as you lift. Translated with DeepL.com (free version)",
+      "caloriesBurnPerMin": 8.5,
+      "activeSgZone": "ActiveSG Free Weights Zone",
+      "difficulty": "Intermediate",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 76,
+      "uuid": "3db63138-a047-4a4d-b616-1a0b7dfca105",
+      "name": "Bench Press Narrow Grip",
+      "category": "Arms",
+      "categoryId": 8,
+      "muscles": [
+        "Triceps"
+      ],
+      "musclesSecondary": [
+        "Shoulders",
+        "Chest"
+      ],
+      "equipment": [
+        "Barbell",
+        "Bench"
+      ],
+      "description": "Setup: Lie flat on the bench and grip the bar at shoulder-width (closer than a standard bench press). Descent: Lower the bar with control to your lower chest. Form: Keep your elbows tucked in tight against your torso—do not let them flare out. Ascent: Press the bar straight back up, squeezing your triceps at the top.",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 79,
+      "uuid": "01271ea0-088c-4e2b-95ad-876af7127057",
+      "name": "Bent High Pulls",
+      "category": "Shoulders",
+      "categoryId": 13,
+      "muscles": [
+        "Trapezius"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "description": "Bend over slightly while holding two dumbbells.&nbsp; Pull the dumbbells up to your chest, keeping your elbows as high as you can.",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Free Weights Zone",
+      "difficulty": "Intermediate",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 81,
+      "uuid": "94a5c406-7bcd-47f3-9687-bdf92a763932",
+      "name": "Bent Over Dumbbell Rows (Single Arm)",
+      "category": "Back",
+      "categoryId": 12,
+      "muscles": [
+        "Lats"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Bench",
+        "Dumbbell"
+      ],
+      "description": "With dumbbells in hand, bend at the hip until hands hang just below the knees (similar to straight-legged-deadlift starting position). Keep upper body angle constant while contracting your lats to pull you ellbows back pinching the shoulder blades at the top. Try not to stand up with every rep, check hands go below knees on every rep.",
+      "caloriesBurnPerMin": 8.5,
+      "activeSgZone": "ActiveSG Free Weights Zone",
+      "difficulty": "Intermediate",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 82,
+      "uuid": "6f79b381-98a4-40d5-8a45-3bb0558be6fe",
+      "name": "Bent-over Lateral Raises",
+      "category": "Shoulders",
+      "categoryId": 13,
+      "muscles": [
+        "Core"
+      ],
+      "musclesSecondary": [],
+      "equipment": [
+        "Bench",
+        "Dumbbell"
+      ],
+      "description": "Sit on bench while holding weights. Bend forward as far as possible, with arms slightly bent at the elbow. Perform a lateral raise while maintaining the bend in your elbow.",
+      "caloriesBurnPerMin": 6.5,
+      "activeSgZone": "ActiveSG Free Weights Zone",
+      "difficulty": "Intermediate",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    },
+    {
+      "id": 83,
+      "uuid": "4af6dbd9-8991-484b-9810-68f117c21edf",
+      "name": "Bent Over Rowing",
+      "category": "Back",
+      "categoryId": 12,
+      "muscles": [
+        "Lats"
+      ],
+      "musclesSecondary": [
+        "Shoulders",
+        "Biceps"
+      ],
+      "equipment": [
+        "Barbell"
+      ],
+      "description": "Holding a barbell with a pronated grip (palms facing down), bend your knees slightly and bring your torso forward, by bending at the waist, while keeping the back straight until it is almost parallel to the floor. Tip: Make sure that you keep the head up. The barbell should hang directly in front of you as your arms hang perpendicular to the floor and your torso. This is your starting position. Now, while keeping the torso stationary, breathe out and lift the barbell to you. Keep the elbows close to the body and only use the forearms to hold the weight. At the top contracted position, squeeze the back muscles and hold for a brief pause. Then inhale and slowly lower the barbell back to the starting position. Repeat for the recommended amount of repetitions.",
+      "caloriesBurnPerMin": 8.5,
+      "activeSgZone": "ActiveSG Power Rack Arena",
+      "difficulty": "Advanced",
+      "syncedAt": "2026-10-15T08:12:38.776Z"
+    }
+  ],
+  "food_logs": [
+    {
+      "id": "f-1",
+      "name": "Mediterranean Grilled Chicken & Quinoa Bowl",
+      "mealType": "lunch",
+      "calories": 485,
+      "proteinGrams": 38,
+      "carbsGrams": 42,
+      "fatGrams": 16,
+      "fiberGrams": 9,
+      "servingSize": "1 bowl (380g)",
+      "timestamp": "12:45 PM",
+      "imageUrl": "/src/assets/images/healthy_grain_bowl_1792039808734.jpg",
+      "healthRating": 9,
+      "healthierChoiceSymbol": true,
+      "dietitianNotes": "Rich in lean protein and essential healthy fats. Ideal post-workout fuel.",
+      "suggestedExercise": "45 mins brisk walk or 25 mins ActiveSG cycling",
+      "activeSgPoints": 25,
+      "createdAt": "2026-10-15T04:11:44.188Z"
+    },
+    {
+      "id": "f-2",
+      "name": "Greek Yogurt with Fresh Blueberries & Chia",
+      "mealType": "breakfast",
+      "calories": 220,
+      "proteinGrams": 18,
+      "carbsGrams": 24,
+      "fatGrams": 4,
+      "fiberGrams": 5,
+      "servingSize": "1 cup (200g)",
+      "timestamp": "08:15 AM",
+      "healthRating": 10,
+      "healthierChoiceSymbol": true,
+      "dietitianNotes": "Great probiotic support with low glycemic index antioxidants.",
+      "suggestedExercise": "20 mins morning stretch & light jog",
+      "activeSgPoints": 20,
+      "createdAt": "2026-10-15T00:11:44.188Z"
+    }
+  ],
+  "workouts": [
+    {
+      "exerciseId": 9,
+      "exerciseName": "2 Handed Kettlebell Swing",
+      "category": "Abs",
+      "durationMinutes": 20,
+      "sets": 3,
+      "reps": 12,
+      "weightKg": 16,
+      "caloriesBurned": 210,
+      "activeSgPoints": 45,
+      "timestamp": "16:14",
+      "id": "w-1792052053918",
+      "createdAt": "2026-10-15T08:14:13.918Z"
+    },
+    {
+      "id": "w-1",
+      "exerciseId": 9,
+      "exerciseName": "2 Handed Kettlebell Swing",
+      "category": "Abs / Conditioning",
+      "durationMinutes": 20,
+      "sets": 4,
+      "reps": 20,
+      "weightKg": 16,
+      "caloriesBurned": 210,
+      "activeSgPoints": 45,
+      "timestamp": "Today 07:15 AM",
+      "createdAt": "2026-10-15T08:11:44.188Z"
+    }
+  ],
+  "biometrics": [
+    {
+      "id": "bio-1",
+      "weightKg": 73.8,
+      "bodyFatPercent": 18.4,
+      "skeletalMuscleKg": 34.2,
+      "visceralFatLevel": 5,
+      "deviceSource": "InBody Scale",
+      "timestamp": "Today 07:30 AM",
+      "createdAt": "2026-10-15T08:11:44.188Z"
+    },
+    {
+      "id": "bio-0",
+      "weightKg": 74.5,
+      "bodyFatPercent": 18.9,
+      "skeletalMuscleKg": 33.8,
+      "visceralFatLevel": 6,
+      "deviceSource": "InBody Scale",
+      "timestamp": "7 days ago",
+      "createdAt": "2026-10-08T08:11:44.188Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b-1",
+      "trainerId": "tr-1",
+      "trainerName": "Coach Sarah Tan",
+      "date": "2026-10-18",
+      "time": "18:00",
+      "sessionType": "online",
+      "hourlyRate": 65,
+      "status": "confirmed",
+      "activeSgLocation": "In-App Live Video Consultation",
+      "createdAt": "2026-10-15T08:11:44.188Z"
+    }
+  ],
+  "wallet": {
+    "healthpointsBalance": 1285,
+    "activeSgCredits": 35,
+    "streakDays": 12,
+    "claimedVoucherIds": [
+      "rew-2"
+    ],
+    "currentTier": "basic"
+  }
+}
