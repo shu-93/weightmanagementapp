@@ -185,19 +185,22 @@ export const api = {
     return await res.json();
   },
 
-  // Live Weather & Outdoor Fitness Readiness
-  async getWeather(lat?: number, lon?: number): Promise<WeatherData> {
+  // Live Singapore 2-Hour Weather Forecast API (Data.gov.sg / NEA)
+  async getWeather(area?: string): Promise<WeatherData> {
     const params = new URLSearchParams();
-    if (lat) params.append('lat', lat.toString());
-    if (lon) params.append('lon', lon.toString());
+    if (area) params.append('area', area);
     const res = await fetch(`/api/weather?${params.toString()}`);
-    if (!res.ok) throw new Error('Failed to fetch weather');
+    if (!res.ok) throw new Error('Failed to fetch weather from data.gov.sg');
     return await res.json();
   },
 };
 
 export interface WeatherData {
-  location: string;
+  source: string;
+  endpoint: string;
+  area: string;
+  forecast: string;
+  validPeriod: string;
   temperature: number;
   apparentTemperature: number;
   condition: string;
@@ -209,6 +212,7 @@ export interface WeatherData {
   airQualityStatus: string;
   fitnessAdvice: string;
   recommendationType: 'outdoor' | 'indoor';
+  availableAreas: string[];
   updatedAt: string;
 }
 

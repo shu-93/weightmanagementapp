@@ -12,7 +12,8 @@ import {
   ChevronUp, 
   MapPin, 
   Dumbbell,
-  Compass
+  Clock,
+  Sparkles
 } from 'lucide-react';
 import { api, WeatherData } from '../services/api';
 
@@ -21,18 +22,19 @@ interface Props {
 }
 
 export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
+  const [selectedArea, setSelectedArea] = useState('Bishan');
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
 
-  const fetchWeather = async () => {
+  const fetchWeather = async (areaToFetch?: string) => {
     setIsRefreshing(true);
     try {
-      const data = await api.getWeather();
+      const data = await api.getWeather(areaToFetch || selectedArea);
       setWeather(data);
     } catch (err) {
-      console.error('Failed to load weather:', err);
+      console.error('Failed to load Singapore 2-hr forecast:', err);
     } finally {
       setLoading(false);
       setIsRefreshing(false);
@@ -40,8 +42,8 @@ export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
   };
 
   useEffect(() => {
-    fetchWeather();
-  }, []);
+    fetchWeather(selectedArea);
+  }, [selectedArea]);
 
   const renderIcon = (iconName: string) => {
     switch (iconName) {
@@ -62,7 +64,7 @@ export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
       <div className="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/60 flex items-center justify-between text-xs text-slate-400 animate-pulse">
         <div className="flex items-center gap-2">
           <CloudSun className="w-4 h-4 text-slate-500" />
-          <span>Fetching Singapore fitness weather & PSI...</span>
+          <span>Connecting to Data.gov.sg 2-hour forecast...</span>
         </div>
       </div>
     );
@@ -83,21 +85,20 @@ export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-bold text-white tabular-nums font-mono">
-                {weather.temperature}°C
+              <span className="text-sm font-bold text-white tracking-tight">
+                {weather.area}: {weather.forecast}
               </span>
-              <span className="text-xs text-slate-300 font-medium">
-                {weather.condition}
-              </span>
-              <span className="text-[10px] text-slate-400">
-                (Feels {weather.apparentTemperature}°C)
+              <span className="text-[10px] text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.2 rounded font-medium">
+                NEA 2-Hr
               </span>
             </div>
 
-            <div className="flex items-center gap-1.5 text-[11px] text-emerald-400 mt-0.5">
-              <span>{weather.fitnessAdvice.split(':')[0]}</span>
+            <div className="flex items-center gap-1.5 text-[11px] text-slate-300 mt-0.5">
+              <span className="text-emerald-400 font-medium">
+                {weather.recommendationType === 'outdoor' ? 'Outdoor Cardio Ready' : 'Indoor Gym Advised'}
+              </span>
               <span className="text-slate-500">·</span>
-              <span className="text-[10px] text-slate-400">PSI {weather.airQualityPsi} (Good)</span>
+              <span className="text-[10px] text-slate-400">{weather.validPeriod}</span>
             </div>
           </div>
         </div>
@@ -110,7 +111,7 @@ export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
             }}
             disabled={isRefreshing}
             className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-700 transition-colors"
-            title="Refresh Weather"
+            title="Refresh Singapore 2-Hour Forecast"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin' : ''}`} />
           </button>
@@ -120,24 +121,42 @@ export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
         </div>
       </div>
 
-      {/* Expanded Fitness Weather Intelligence Panel */}
+      {/* Expanded Forecast Panel with Singapore Area Selector */}
       {expanded && (
         <div className="px-3.5 pb-3.5 pt-2 border-t border-slate-700/60 space-y-3 bg-slate-900/60 text-xs animate-in fade-in duration-150">
+          {/* Area Selector */}
+          <div>
+            <label className="block text-[10px] font-semibold text-slate-400 uppercase tracking-wider mb-1">
+              Select Singapore Area / ActiveSG Hub
+            </label>
+            <select
+              value={selectedArea}
+              onChange={(e) => setSelectedArea(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-medium"
+            >
+              {weather.availableAreas?.map((area) => (
+                <option key={area} value={area}>
+                  {area} (NEA 2-Hr Forecast)
+                </option>
+              ))}
+            </select>
+          </div>
+
           <p className="text-[11px] text-slate-300 leading-relaxed">
             {weather.fitnessAdvice}
           </p>
 
           <div className="grid grid-cols-3 gap-2 text-center">
             <div className="p-2 rounded-xl bg-slate-900/80 border border-slate-800">
-              <Droplets className="w-3.5 h-3.5 text-sky-400 mx-auto mb-1" />
-              <span className="text-[10px] text-slate-400 block">Humidity</span>
-              <span className="text-xs font-bold text-white font-mono">{weather.humidity}%</span>
+              <Clock className="w-3.5 h-3.5 text-sky-400 mx-auto mb-1" />
+              <span className="text-[10px] text-slate-400 block">Forecast Window</span>
+              <span className="text-[11px] font-bold text-white">{weather.validPeriod}</span>
             </div>
 
             <div className="p-2 rounded-xl bg-slate-900/80 border border-slate-800">
               <Wind className="w-3.5 h-3.5 text-teal-400 mx-auto mb-1" />
-              <span className="text-[10px] text-slate-400 block">Wind</span>
-              <span className="text-xs font-bold text-white font-mono">{weather.windSpeedKmH} km/h</span>
+              <span className="text-[10px] text-slate-400 block">Condition</span>
+              <span className="text-[11px] font-bold text-white truncate">{weather.forecast}</span>
             </div>
 
             <div className="p-2 rounded-xl bg-slate-900/80 border border-slate-800">
@@ -149,7 +168,7 @@ export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
 
           <div className="flex items-center justify-between pt-1">
             <span className="text-[10px] text-slate-500 flex items-center gap-1">
-              <MapPin className="w-3 h-3 text-slate-400" /> {weather.location} · Updated {weather.updatedAt}
+              <MapPin className="w-3 h-3 text-slate-400" /> Source: data.gov.sg (NEA) · Updated {weather.updatedAt}
             </span>
 
             {onOpenWorkouts && (
@@ -158,7 +177,7 @@ export const WeatherWidget: React.FC<Props> = ({ onOpenWorkouts }) => {
                 className="px-2.5 py-1 bg-sky-500/20 text-sky-300 hover:bg-sky-500 hover:text-slate-950 font-semibold text-[10px] rounded-lg transition-colors flex items-center gap-1"
               >
                 <Dumbbell className="w-3 h-3" />
-                {weather.recommendationType === 'indoor' ? 'ActiveSG Gym Workouts' : 'Outdoor Exercises'}
+                {weather.recommendationType === 'indoor' ? 'Indoor Gym Workouts' : 'Outdoor PCN Cardio'}
               </button>
             )}
           </div>
