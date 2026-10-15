@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0.0",
     "appName": "VibeWeight Mobile Backend",
-    "lastUpdated": "2026-10-15T08:14:13.918Z",
+    "lastUpdated": "2026-10-15T08:12:38.776Z",
     "wgerEndpoint": "https://wger.de/api/v2/exerciseinfo/?language=2&limit=20",
     "lastWgerSync": "2026-10-15T08:12:38.776Z",
     "wgerTotalCount": 932
@@ -480,20 +480,6 @@
   ],
   "workouts": [
     {
-      "exerciseId": 9,
-      "exerciseName": "2 Handed Kettlebell Swing",
-      "category": "Abs",
-      "durationMinutes": 20,
-      "sets": 3,
-      "reps": 12,
-      "weightKg": 16,
-      "caloriesBurned": 210,
-      "activeSgPoints": 45,
-      "timestamp": "16:14",
-      "id": "w-1792052053918",
-      "createdAt": "2026-10-15T08:14:13.918Z"
-    },
-    {
       "id": "w-1",
       "exerciseId": 9,
       "exerciseName": "2 Handed Kettlebell Swing",
@@ -545,7 +531,7 @@
     }
   ],
   "wallet": {
-    "healthpointsBalance": 1285,
+    "healthpointsBalance": 1240,
     "activeSgCredits": 35,
     "streakDays": 12,
     "claimedVoucherIds": [

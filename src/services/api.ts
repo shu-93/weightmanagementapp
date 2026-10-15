@@ -184,4 +184,31 @@ export const api = {
     if (!res.ok) throw new Error('Failed to fetch db stats');
     return await res.json();
   },
+
+  // Live Weather & Outdoor Fitness Readiness
+  async getWeather(lat?: number, lon?: number): Promise<WeatherData> {
+    const params = new URLSearchParams();
+    if (lat) params.append('lat', lat.toString());
+    if (lon) params.append('lon', lon.toString());
+    const res = await fetch(`/api/weather?${params.toString()}`);
+    if (!res.ok) throw new Error('Failed to fetch weather');
+    return await res.json();
+  },
 };
+
+export interface WeatherData {
+  location: string;
+  temperature: number;
+  apparentTemperature: number;
+  condition: string;
+  icon: string;
+  isRainy: boolean;
+  humidity: number;
+  windSpeedKmH: number;
+  airQualityPsi: number;
+  airQualityStatus: string;
+  fitnessAdvice: string;
+  recommendationType: 'outdoor' | 'indoor';
+  updatedAt: string;
+}
+

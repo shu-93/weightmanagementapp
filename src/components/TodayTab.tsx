@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { FoodLogItem, DeviceSyncStatus, ScheduledActivity } from '../types';
 import { WorkoutLog } from '../services/api';
+import { WeatherWidget } from './WeatherWidget';
 
 interface Props {
   foodLogs: FoodLogItem[];
@@ -96,6 +97,9 @@ export const TodayTab: React.FC<Props> = ({
           <Award className="w-4 h-4" />
         </button>
       </div>
+
+      {/* Live Outdoor & Indoor Fitness Weather Widget */}
+      <WeatherWidget onOpenWorkouts={onOpenExerciseModal} />
 
       {/* Hero Calorie Summary Card */}
       <div className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80 shadow-md">
